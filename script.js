@@ -13,22 +13,15 @@ function change() {
 let random;
 let random2;
 
-setInterval(function() {
-    random = Math.floor(Math.random() * 200) + "px";
-    random2 = Math.floor(Math.random() * 200) + "px";
-}, 10) 
-
+setInterval(function () {
+  random = Math.floor(Math.random() * 200) + "px";
+  random2 = Math.floor(Math.random() * 200) + "px";
+}, 10);
 
 function noPos() {
-    var noButton =  document.getElementById("no");
+  var noButton = document.getElementById("no");
 
-    for(let i = 0 ; i <= 99 ; i++){ 
-        noButton.style.scale = "1.1";
-        noButton.style.top = random;
-        noButton.style.left = random2;
-    }
-
- 
-
+git   noButton.style.scale = "1.1";
+  noButton.style.top = random;
+  noButton.style.left = random2;
 }
-
