@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello cutie</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Water+Brush&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="center h-screen bg-red-200">
-        <div class="center flex-col mt-16 p-7 rounded-2xl card-bg w-80">
-            <h1 id="p1" class="que font-cursive text-4xl text-text pb-5">Would you-</h1>
-            <img id="emoji" src="images/pleading-face_1f97a.png" alt="pleading" />
-            <!-- <img src="images/heart.png" alt="heart" /> -->
-            <div class="center w-32 m-[-3rem]">
-              <img src="images/left.png" alt="left" />
-              <button onclick="change()" id="ans" class="font-cursive py-[.1rem] rounded-lg text-lg bg-red-300 px-3">
-                Yes!
-              </button>
-              <img src="images/right.png" alt="right" />
-            </div>
-            <h1 id="p2" class="que mt-16 text-center font-cursive text-2xl text-text">
-              Would you go on a Date with me?
-            </h1>
-          </div>
+    <button id="no" onmouseover="noPos();" class="w-fit py-1 px-2 bg-pink-300 rounded-lg absolute top-20 left-20 transition-all ease-in duration-200">bruh</button>
+
+    <div class="center h-screen bg-red-200 ">
+      <div class="center flex-col mt-16 p-7 rounded-2xl card-bg w-80">
+        <h1 id="p1" class="que font-cursive text-4xl text-text pb-5">
+          Would you-
+        </h1>
+        <img id="emoji" src="images/pleading-face_1f97a.png" alt="pleading" />
+        <!-- <img src="images/heart.png" alt="heart" /> -->
+        <div class="center w-32 m-[-3rem]">
+          <img src="images/left.png" alt="left" />
+          <button
+            onclick="change()"
+            id="ans"
+            class="font-cursive py-[.1rem] rounded-lg text-lg bg-red-300 px-3"
+          >
+            Yes!
+          </button>
+          <img src="images/right.png" alt="right" />
+        </div>
+        <h1
+          id="p2"
+          class="que mt-16 text-center font-cursive text-2xl text-text"
+        >
+          Would you go on a Date with me?
+        </h1>
+      </div>
     </div>
+
+
     <script src="script.js"></script>
   </body>
 </html>
