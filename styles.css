@@ -9,3 +9,7 @@
 .center-self {
     @apply flex self-center justify-self-center;
 }
+
+.card-bg {
+    @apply bg-gradient-to-b from-red-300 to-red-200;
+}

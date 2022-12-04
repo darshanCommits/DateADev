@@ -3,14 +3,13 @@ module.exports = {
   content: ["*"],
   theme: {
     fontFamily: {
-      "cursive" : "Nerko One"
+      "cursive" : "Cookie"
     },
     
     extend: {
       colors: {
-        "pink" : "#FF7F40",
-        "red" : "#FF3635",
-        "white" : "#fff",
+        "yes" : "#FF7F40",
+        "done" : "#FF3635",
         "text" : "#0E1026"
       },
     },
