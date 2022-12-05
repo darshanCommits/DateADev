@@ -1,3 +1,4 @@
+
 var noButton = document.getElementById("no");
 var emoji = document.getElementById("emoji");
 
@@ -5,7 +6,6 @@ function change() {
   emoji.setAttribute("src", "images/heart.png");
   emoji.style.scale = ".3";
   noButton.classList.add("opacity-0");
-  
 
   setTimeout(function () {
     emoji.style.scale = "1.0";
@@ -13,7 +13,7 @@ function change() {
       "axha chal ab aa bol aa,";
     document.getElementsByClassName("que")[1].innerText =
       "muje tumhare muh me mere bache marne hai";
-    document.getElementById("ans").classList.add("hidden", "opacity-0");
+    document.getElementById("ans").classList.add("hidden");
   }, 400);
 }
 
@@ -26,14 +26,10 @@ setInterval(function () {
 }, 10);
 
 function noPos() {
-    noButton.style.scale = "1.3";
-    noButton.style.top = random;
-    noButton.style.left = random2;
-    setTimeout(function() {
-        noButton.style.scale = "1.0";
-    }, 200) ;
-
-
+  noButton.style.scale = "1.3";
+  noButton.style.top = random;
+  noButton.style.left = random2;
+  setTimeout(function () {
+    noButton.style.scale = "1.0";
+  }, 200);
 }
-
-
