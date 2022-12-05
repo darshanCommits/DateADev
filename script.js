@@ -1,27 +1,39 @@
+var noButton = document.getElementById("no");
+var emoji = document.getElementById("emoji");
+
 function change() {
-  document.getElementById("emoji").setAttribute("src", "images/heart.png");
+  emoji.setAttribute("src", "images/heart.png");
+  emoji.style.scale = ".3";
+  noButton.classList.add("opacity-0");
+  
 
   setTimeout(function () {
+    emoji.style.scale = "1.0";
     document.getElementsByClassName("que")[0].innerText =
       "axha chal ab aa bol aa,";
     document.getElementsByClassName("que")[1].innerText =
       "muje tumhare muh me mere bache marne hai";
-    document.getElementById("ans").classList.add("hidden");
-  }, 200);
+    document.getElementById("ans").classList.add("hidden", "opacity-0");
+  }, 400);
 }
 
 let random;
 let random2;
 
 setInterval(function () {
-  random = Math.floor(Math.random() * 200) + "px";
-  random2 = Math.floor(Math.random() * 200) + "px";
+  random = Math.floor(Math.random() * 300) + "px";
+  random2 = Math.floor(Math.random() * 300) + "px";
 }, 10);
 
 function noPos() {
-  var noButton = document.getElementById("no");
+    noButton.style.scale = "1.3";
+    noButton.style.top = random;
+    noButton.style.left = random2;
+    setTimeout(function() {
+        noButton.style.scale = "1.0";
+    }, 200) ;
 
-git   noButton.style.scale = "1.1";
-  noButton.style.top = random;
-  noButton.style.left = random2;
+
 }
+
+
