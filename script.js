@@ -2,7 +2,7 @@
 var noButton = document.getElementById("no");
 var emoji = document.getElementById("emoji");
 
-function change() {
+ function change() {
   emoji.setAttribute("src", "images/heart.png");
   emoji.style.scale = ".3";
   noButton.classList.add("opacity-0");
@@ -25,7 +25,7 @@ setInterval(function () {
   random2 = Math.floor(Math.random() * 300) + "px";
 }, 10);
 
-function noPos() {
+ function noPos() {
   noButton.style.scale = "1.3";
   noButton.style.top = random;
   noButton.style.left = random2;
@@ -33,3 +33,6 @@ function noPos() {
     noButton.style.scale = "1.0";
   }, 200);
 }
+
+window.noPos = noPos
+window.change = change
