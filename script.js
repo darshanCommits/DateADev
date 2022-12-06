@@ -33,3 +33,7 @@ function noPos() {
     noButton.style.scale = "1.0";
   }, 200);
 }
+
+// Attach above functions to window object, so it will be accessible to DOM
+window.noPos = noPos
+window.change = change
