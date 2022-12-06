@@ -1,9 +1,10 @@
+import heart from "./images/heart.png";
 
 var noButton = document.getElementById("no");
 var emoji = document.getElementById("emoji");
 
  function change() {
-  emoji.setAttribute("src", "images/heart.png");
+  emoji.setAttribute("src", heart);
   emoji.style.scale = ".3";
   noButton.classList.add("opacity-0");
 
