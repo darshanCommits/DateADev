@@ -1,9 +1,16 @@
 import heart from "./images/heart.png";
 
-var noButton = document.getElementById("no");
-var emoji = document.getElementById("emoji");
+let noButton = document.getElementById("no");
+let emoji = document.getElementById("emoji");
+let random;
+let random2;
 
- function change() {
+setInterval(function () {
+  random = Math.floor(Math.random() * 300) + "px";
+  random2 = Math.floor(Math.random() * 300) + "px";
+}, 10);
+
+function change() {
   emoji.setAttribute("src", heart);
   emoji.style.scale = ".3";
   noButton.classList.add("opacity-0");
@@ -18,15 +25,7 @@ var emoji = document.getElementById("emoji");
   }, 400);
 }
 
-let random;
-let random2;
-
-setInterval(function () {
-  random = Math.floor(Math.random() * 300) + "px";
-  random2 = Math.floor(Math.random() * 300) + "px";
-}, 10);
-
- function noPos() {
+function noPos() {
   noButton.style.scale = "1.3";
   noButton.style.top = random;
   noButton.style.left = random2;
@@ -35,5 +34,5 @@ setInterval(function () {
   }, 200);
 }
 
-window.noPos = noPos
-window.change = change
+window.noPos = noPos;
+window.change = change;
