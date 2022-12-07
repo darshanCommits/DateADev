@@ -15,5 +15,5 @@
 }
 
 .no-button {
-    @apply w-fit drop-shadow-sm py-1 px-2 bg-pink-300 rounded-lg absolute top-56 left-40 transition-all ease-in duration-200 active:bg-pink-300;
+    @apply w-fit py-1 px-2 bg-pink-300 rounded-lg absolute top-56 left-40 transition-all ease-in duration-200 focus:bg-pink-300;
 }
