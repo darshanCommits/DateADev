@@ -18,7 +18,7 @@ function change() {
   setTimeout(function () {
     emoji.style.scale = "1.0";
     document.getElementsByClassName("que")[0].innerText =
-      "You know you're obviously a 10. Lekin agar tum pH scale par hoti";
+      "agar tum pH scale par hoti";
     document.getElementsByClassName("que")[1].innerText =
       "You'd be a 0. Cause, phew. Girl, You're far from basic";
     document.getElementById("ans").classList.add("hidden");
